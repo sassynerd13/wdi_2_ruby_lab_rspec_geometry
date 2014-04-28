@@ -1,13 +1,21 @@
-# Rspec Geometry Lab
+# RSpec Geometry
 
-You've just started using RSpec, and now is the time to practice it more and expand your TDD skills. 
+Using test-driven development with RSpec, create the following classes:
 
-We're going to TDD building a `Geometry` module that holds the classes of `Triangle`, `Rectangle` and `Circle`. 
+### `Rectangle`
 
-The `Triangle` will have instance variables of `@sideA`, `@sideB` and `@sideC`. `Triangle` needs methods to calculate the `perimeter`, `area`, `angles` (outputs an array of angles), and `valid?`. 
+* Has a length and a width
+* Has methods that return its perimeter and area
 
-The `Rectangle` will have instance variables of `@length` and `@width`. It needs methods to calcualte the perimeter and area of the rectangle. 
+### `Circle`
 
-The `Circle` will have a `@radius` instance variable, and methods for calculating `circumference` and `area`
+* Has a radius
+* Has methods that return its circumference and area
 
-Use Rspec to TDD the building of these. Then turn in with a Pull Request. 
+### `Triangle`
+
+* Has three side lengths
+* Has methods that return its perimeter and area
+* Has a method that determines whether the triangle is valid (hint: use the Inequality Theorem)
+
+**Bonus:** Prevent invalid triangles from being created in the first place by raising an `ArgumentError`. The method that checks for validity can now be private &ndash; why is this?
