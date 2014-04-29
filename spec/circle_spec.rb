@@ -14,4 +14,9 @@ describe Circle do
     expect(first_circle.circumference).to be_within(0.0001).of(62.8318)
     expect(second_circle.circumference).to be_within(0.0001).of(43.9822)
   end
+
+  it 'calculates its area' do
+    expect(first_circle.area).to be_within(0.001).of(314.159)
+    expect(second_circle.area).to be_within(0.001).of(153.938)
+  end
 end
