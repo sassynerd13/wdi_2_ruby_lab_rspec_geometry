@@ -2,6 +2,7 @@ require 'spec_helper'
 require_relative '../lib/circle'
 
 describe Circle do
+  # Alternative to `before`, somewhat less flexible
   let(:first_circle) { Circle.new(radius: 10) }
   let(:second_circle) { Circle.new(radius: 7) }
 
