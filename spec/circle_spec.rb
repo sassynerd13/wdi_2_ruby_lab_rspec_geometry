@@ -9,4 +9,9 @@ describe Circle do
     expect(first_circle.radius).to eq 10
     expect(second_circle.radius).to eq 7
   end
+
+  it 'calculates its circumference' do
+    expect(first_circle.circumference).to be_within(0.0001).of(62.8318)
+    expect(second_circle.circumference).to be_within(0.0001).of(43.9822)
+  end
 end
