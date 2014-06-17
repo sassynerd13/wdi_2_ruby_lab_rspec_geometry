@@ -15,7 +15,13 @@ describe Circle do
 
   describe '#circumference' do
     it 'calculates the circumference' do
-      expect(circle.circumference).to be_within(0.1).of(31.4)
+      expect(circle.circumference).to be_within(0.01).of(31.41)
+    end
+  end
+
+  describe '#area' do
+    it 'calculates the area' do
+      expect(circle.area).to be_within(0.01).of(78.53)
     end
   end
 
