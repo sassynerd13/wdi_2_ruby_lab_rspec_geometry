@@ -10,4 +10,12 @@ describe Rectangle do
 
     end
   end
+
+  describe '#area' do
+    it 'calculates the area' do
+      rectangle = Rectangle.new(10, 2)
+      expect(rectangle.area).to eq 20
+    end
+  end
+
 end
